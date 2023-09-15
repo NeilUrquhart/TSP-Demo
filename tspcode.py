@@ -12,7 +12,7 @@ def setup():
     # warnings may be useful!!
     warnings.filterwarnings('ignore')
     global problem
-    problem = pd.read_csv('./edinburgh.csv')
+    problem = pd.read_csv('edinburgh.csv')
     problem['Text'] = problem['Name']
     problem = problem.set_index('Name')
     global start
